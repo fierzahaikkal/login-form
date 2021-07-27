@@ -1,6 +1,7 @@
 # login-form
 
-ini adalah repositori untuk uji coba login form
+ini adalah repositori pertama saya
+berisi uji coba login form
 
 coding ini menggunakan :
 HTML
