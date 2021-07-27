@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LORDE Login Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <div class="container">
+           <div class="card">
+               <div class="in-card" id="card">
+                    <div class="front-card">
+                        <h2>LOGIN</h2>
+                        <form>
+                            <input type="text" id="uname" name="username" class="input-box" placeholder="username" required>
+                            <input type="password" id="pass" name="password" class="input-box" placeholder="Password" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">Im New Here</button>
+                        <a href="">Forget Password</a>
+                    </div>
+                    <div class="back-card">
+                        <h2>REGISTER</h2>
+                        <form>
+                            <input type="text" id="uname" name="username" class="input-box" placeholder="username" required>
+                            <input type="email" id="email" name="username" class="input-box" placeholder="email" required>
+                            <input type="password" id="pass" name="password" class="input-box" placeholder="Password" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                        <a href="">Forget Password</a>
+                    </div>
+           </div>
+        </div>
+        <script>
+            var card = document.getElementById("card");
+            function openRegister(){
+                card.style.transform = "rotateY(-180deg)";
+            }
+            function openLogin(){
+                card.style.transform = "rotateY(0deg)";
+            }
+        </script>
+    </body>
+</html>
